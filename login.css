@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:impact, fantasy;
+}
+.overlay {
+    font-family:impact, fantasy;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    font-size: 170px;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure it is on top of other elements */
+    color: white; /* Adjust text color for visibility */
+}
+.overlay-logo{
+    position: absolute;
+    top: 100px;
+    left: 6%;
+    font-size: 170px;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure it is on top of other elements */
+    width: 120px;
+}
+.create-text{
+    font-size: 110px;
+    position: relative;
+    top: -50px;
+    z-index: 20;
+}
+.text-form{
+    font-size: 23Px;
+}
+.text-form-2{
+    font-size: 25px;
+}
+.container-login{
+    width: 80%;
+    justify-content: center;
+}
+.padding-login{
+    padding-bottom: 45px;
+    padding-top: 200px;
+}
+.logo-black{
+    width:100px;
+    position: relative;
+    left: -5px;
+    top: 10px;
+    z-index: 10;
+}
+.pad_bot{
+    padding-bottom: 130px;
+}
+.border-bottom{
+    justify-content: left;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.body{
+    background-color: black;
+}
+.text-link{
+    font-size: 40px;
+}
+.link-top{
+    color: white;
+}
+.link-top:hover{
+    color: rgb(320, 215, 0);
+    font-size: 102%;
+}
+.bigger-login:hover{
+    color: rgb(320, 215, 0);
+    font-size: 47px;
+}
+.my-img{
+    width: 100%;
+}
+.btn-yell{
+    background: yellow;
+}
+.footer-big{
+    position: relative;
+    top:80px;
+    font-size: 150px;
+}
+.bg-color {
+    background: linear-gradient(to bottom, #ffcc00, #ff9900);
+}
+.width-social{
+    width: 42px;
+}
+.text-home-body{
+    font-family: "Times New Roman";
+    font-size: 27Px;
+    text-align: center;
+    color: white;
+}
+.footer-text{
+    font-size: 30px;
+    color:black;
+}
+.footer-text:hover{
+    color:rebeccapurple;
+}
+.link-height{
+    height: 30px;
+}
+.cp-small{
+    color: black;
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: "Times New Roman";
+}
+.times-roman{
+    font-family: "Times New Roman";
+}
+.footer-top-padding{
+    padding-top: 50px;
+}
+.width-footer-icon{
+    width:45Px;
+}
+.footer-links{
+    text-align: end;
+}
+.login-text{
+    font-size: 100Px;
+    position: relative;
+    bottom:60px;
+    z-index:10;
+    color:white;
+}
+.bg-img{
+    background-image: url("img/bg_home.png");
+    background-repeat: no-repeat;
+}
+.width-login{
+    width:50%;
+}
+.gold:hover{
+    color: gold;
+}
+.input-wd{
+    width: 50%;
+}
+.form-in::placeholder{
+    font-size: 22px;
+}
+input[type="email"]
+{
+    font-size:22px;
+}
+input[type="text"]
+{
+    font-size:22px;
+}
+input[type="password"]
+{
+    font-size:22px;
+}
+.font-form{
+    font-size: 30px;
+}
+.ptop{
+    padding: 100px 20px 20px;
+    position: relative;
+    top:-200Px;
+}
+@media(max-width:1000px){
+    .overlay{
+        font-size:110px;
+        top: 95px;
+    }
+    .pad_bot{
+        padding-bottom: 100px;
+    }
+    .logout{
+        width: 40px;
+    }
+    .account{
+        width: 45px;
+    }
+    .text-link{
+        font-size: 25px;
+    }
+    .overlay-logo{
+        width: 120px;
+    }
+    .font-form{
+        font-size: 23px;
+    }
+    .text-form-2{
+        font-size: 21px;
+    }
+    .footer-big{
+        position: relative;
+        top: 60px;
+        font-size: 90px;
+    }
+    .font-normal{
+        font-size: 15px;
+        position: relative;
+        top: 50px;
+    }
+    .footer-text{
+        font-size: 25px;
+    }
+    .cp-small{
+        font-size: 18px;
+        position: relative;
+        left: -15px;
+    }
+    .logo-black{
+        width:80px;
+        position: relative;
+        left: -20px;
+        top: 13px
+    }
+    .footer-top-padding{
+        padding-top: 30px;
+    }
+    .width-social{
+        width: 30px;
+    }
+    .width-footer-icon{
+        width:35Px;
+    }
+    .text-home-body{
+        font-size: 20Px;
+    }
+    .link-top:hover{
+        color: rgb(320, 215, 0);
+        font-size: 102%;
+    }
+    .create-text{
+        font-size: 65px;
+        position: relative;
+        top:-90px;
+
+    }
+    input[type="email"]
+    {
+        font-size:20px;
+    }
+    input[type="password"]
+    {
+        font-size:20px;
+    }
+    input[type="text"]
+    {
+        font-size:20px;
+    }
+    .login-text{
+        top:-90px;
+        font-size: 70px;
+    }
+}
+@media(max-device-width: 400px){
+    .footer-big{
+        position: relative;
+        left:-10Px;
+    }
+}
+@media(max-device-width:600px){
+    .overlay{
+        font-size:190px;
+        top: 210px;
+        left: 50%;
+    }
+    .pad_bot{
+        padding-bottom: 240px;
+    }
+    .overlay-logo{
+        width: 0px;
+    }
+    .logout{
+        width: 80px;
+        position: relative;
+        top: 20px
+    }
+    .account{
+        width: 88px;
+        position: relative;
+        top: 20px
+    }
+    .text-link {
+        font-size: 20px;
+        position: relative;
+        left: 12Px;
+    }
+    .mobile-modal{
+        position: relative;
+        bottom:40px;
+    }
+    .my-img{
+        width: 93%;
+    }
+    .home-text{
+        position: relative;
+        left:-10px;
+        bottom:20Px;
+    }
+    .footer-big{
+        padding-top: 40%;
+        top:60px;
+        font-size: 130px;
+    }
+    .footer-big2{
+        position: relative;
+        top:60px;
+        font-size: 130px;
+        padding-top: 5%;
+    }
+    .footer-text{
+        font-size: 20px;
+        color:black;
+    }
+    .left{
+        position: relative;
+        left: -35px;
+    }
+    .cp-small{
+        font-size: 40px;
+        position: relative;
+        left: -20px;
+    }
+    .logo-black{
+        width:140px;
+        position: relative;
+        top:15px;
+        left: -20px;
+    }
+    .width-social{
+        width: 60px;
+    }
+    .footer-links{
+        text-align: start;
+    }
+    .text-home-body{
+        font-family: "Times New Roman";
+        font-size: 20Px;
+        position: relative;
+        left: -2%;
+    }
+    .bigger-login{
+        font-size: 45px;
+    }
+    .width-footer-icon{
+        width:65Px;
+    }
+    .footer-text{
+        font-size: 45Px;
+    }
+    .login-text{
+        font-size: 100Px;
+        top:-35px
+    }
+    .font-form{
+        font-size: 43px;
+    }
+    .form-in {
+        height: 70px;
+        font-size: 50px;
+        box-sizing: border-box;
+    }
+    .form-in::placeholder{
+        font-size: 37px;
+    }
+    input[type="email"]
+    {
+        font-size:40px;
+    }
+    input[type="password"]
+    {
+        font-size:40px;
+    }
+    input[type="text"]
+    {
+        font-size:40px;
+    }
+    .text-form{
+        font-size: 33Px;
+    }
+    .text-form-2{
+        font-size: 37px;
+    }
+    .create-text{
+        font-size: 100px;
+        position: relative;
+        top:-140Px;
+    }
+    .ptop{
+        padding-top: 150px;
+    }
+    .bg-img{
+        position: relative;
+        top:100px
+    }
+    .link-top{
+        position: relative;
+        top: 20Px;
+        font-size: 52px;
+    }
+    .link-top:hover{
+        font-size: 53px;
+        color: rgb(320, 215, 0);
+    }
+    .upper-mobile{
+        position: relative;
+        bottom: 100px;
+    }
+}
