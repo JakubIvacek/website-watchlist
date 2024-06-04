@@ -13,6 +13,16 @@
     z-index: 10; /* Ensure it is on top of other elements */
     color: white; /* Adjust text color for visibility */
 }
+.overlay-smaller{
+    font-family:impact, fantasy;
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    font-size: 115px;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure it is on top of other elements */
+    color: white; /* Adjust text color for visibility */
+}
 .overlay-logo{
     position: absolute;
     top: 100px;
@@ -131,6 +141,9 @@ ul {
         font-size:110px;
         top: 95px;
     }
+    .overlay-smaller{
+        font-size: 80px;
+    }
     .pad_bot{
         padding-bottom: 100px;
     }
@@ -213,9 +226,13 @@ ul {
         bottom:5px;
     }
     .text-link {
-        font-size: 20px;
+        font-size: 22px;
         position: relative;
-        left: 12Px;
+        left: 10Px;
+    }
+    .link-top-first{
+        position: relative;
+        left:7Px;
     }
     .mobile-modal{
         position: relative;
