@@ -22,10 +22,20 @@
     z-index: 10; /* Ensure it is on top of other elements */
     width: 120px;
 }
+.position-icon{
+    position: relative;
+    top: -49px;
+    left: 90%;
+    width: 50px;
+}
+.button-signup{
+    position: relative;
+    left: 25px;
+}
 .create-text{
     font-size: 110px;
     position: relative;
-    top: -50px;
+    top: -110px;
     z-index: 20;
 }
 .text-form{
@@ -166,10 +176,15 @@ input[type="password"]
     font-size: 30px;
 }
 .ptop{
-    padding: 100px 20px 20px;
+    padding: 120px 20px 25px;
     position: relative;
-    top:-200Px;
+    top:-210Px;
 }
+.upper-mobile{
+    position: relative;
+    bottom:60px;
+}
+
 @media(max-width:1000px){
     .overlay{
         font-size:110px;
@@ -239,7 +254,7 @@ input[type="password"]
     .create-text{
         font-size: 65px;
         position: relative;
-        top:-90px;
+        top:-95px;
 
     }
     input[type="email"]
@@ -257,6 +272,16 @@ input[type="password"]
     .login-text{
         top:-90px;
         font-size: 70px;
+    }
+    .upper-mobile{
+        position: relative;
+        bottom:0px;
+    }
+    .position-icon{
+        position: relative;
+        top: -45px;
+        left: 85%;
+        width: 45px;
     }
 }
 @media(max-device-width: 400px){
@@ -278,14 +303,15 @@ input[type="password"]
         width: 0px;
     }
     .logout{
-        width: 80px;
+        width: 92px;
         position: relative;
-        top: 20px
+        top: 10px
     }
     .account{
-        width: 88px;
+        width: 102px;
         position: relative;
-        top: 20px
+        top: 10px;
+        left: -28px;
     }
     .text-link {
         font-size: 20px;
@@ -360,7 +386,7 @@ input[type="password"]
         top:-35px
     }
     .font-form{
-        font-size: 43px;
+        font-size: 45px;
     }
     .form-in {
         height: 70px;
@@ -383,22 +409,17 @@ input[type="password"]
         font-size:40px;
     }
     .text-form{
-        font-size: 33Px;
+        font-size: 35Px;
     }
     .text-form-2{
         font-size: 37px;
-    }
-    .create-text{
-        font-size: 100px;
-        position: relative;
-        top:-140Px;
     }
     .ptop{
         padding-top: 150px;
     }
     .bg-img{
         position: relative;
-        top:100px
+        top:110px
     }
     .link-top{
         position: relative;
@@ -411,6 +432,16 @@ input[type="password"]
     }
     .upper-mobile{
         position: relative;
-        bottom: 100px;
+        bottom: 70px;
+    }
+    .wtf{
+        position: relative;
+        top: -120px;
+    }
+    .position-icon{
+        position: relative;
+        top: -67px;
+        left: 85%;
+        width: 65px;
     }
 }

@@ -197,7 +197,7 @@ ul {
     .overlay{
         font-size:70px;
         top: 80px;
-        left: 47%;
+        left: 50%;
     }
     .pad_bot{
         padding-bottom: 100px;
@@ -220,6 +220,7 @@ ul {
     .mobile-modal{
         position: relative;
         bottom:40px;
+        left:4%;
     }
     .my-img{
         width: 93%;
@@ -231,6 +232,7 @@ ul {
     }
     .footer-big{
         top:50px;
+        left: 0;
         font-size: 70px;
     }
     .footer-text{
@@ -262,13 +264,12 @@ ul {
         font-family: "Times New Roman";
         font-size: 20Px;
         position: relative;
-        left: -2%;
     }
     .bigger-login{
         font-size: 45px;
     }
     .left-few{
         position: relative;
-        left:-10px;
+
     }
 }
