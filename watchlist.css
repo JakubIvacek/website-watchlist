@@ -1,0 +1,138 @@
+.container-body {
+    display: flex;
+    width: 100%;
+}
+.width-aside{
+    width: 25%;
+    border-color: white;
+    border-top: white 2px outset;
+    border-bottom: white 2px inset;
+}
+.width-body{
+    width: 75%;
+    border-color: white;
+    border-top: white 2px outset;
+    border-left: white 2px outset;
+    border-bottom: white 2px inset;
+}
+.img-container {
+    width: 100%;
+    height: 310px; /* Adjust this height as needed */
+    overflow: hidden;
+}
+.card{
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 10px;
+    border:none;
+}
+.card:hover{
+    box-shadow: 15px 15px 25px #ffcc00;
+    border-radius: 10px;
+    border:none;
+}
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-aside{
+    font-size: 20px;
+}
+.text-aside-big{
+    font-size:45px;
+    padding-left: 25px;
+}
+.padding-watchlists{
+    padding-left: 30px;
+}
+.list-style{
+    list-style: circle;
+}
+.padding-card{
+    padding:15Px;
+}
+.list-name{
+    font-size: 40px;
+}
+.width-card{
+    width: 17rem;
+}
+@media(max-width:1200px){
+    .text-aside-big{
+        font-size:35px;
+        padding-left: 0;
+    }
+    .list-name{
+        font-size: 35px;
+    }
+}
+@media(max-width:1000px) {
+    .width-aside{
+        width: 35%;
+    }
+    .width-body{
+        width: 65%;
+    }
+    .text-aside-big{
+        font-size:34px;
+    }
+    .list-name{
+        font-size: 30px;
+    }
+}
+@media(max-width: 800px){
+    .width-aside{
+        width: 40%;
+    }
+    .width-body{
+        width: 60%;
+    }
+    .text-aside-big{
+        font-size:31px;
+    }
+    .list-name{
+        font-size:27px;
+    }
+}
+@media(max-width: 600px){
+    .width-aside{
+        width: 46%;
+    }
+    .width-body{
+        width: 54%;
+    }
+    .text-aside-big{
+        font-size:25px;
+    }
+    .overlay{
+        font-size: 90px;
+        top: 120px;
+    }
+    .list-name{
+        font-size: 23px;
+    }
+    .img-container {
+        width: 100%;
+        height: 250px; /* Adjust this height as needed */
+        overflow: hidden;
+    }
+    .width-card{
+        width: 13rem;
+    }
+    .m-when-need{
+        margin-top: 10Px;
+    }
+    .card:hover{
+        box-shadow: 10px 10px 20px gold;
+        border-radius: 10px;
+        border:none;
+    }
+}
+@media(max-device-width:600px){
+    .width-aside{
+        width: 35%;
+    }
+    .width-body{
+        width: 65%;
+    }
+}

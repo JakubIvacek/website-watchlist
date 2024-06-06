@@ -4,6 +4,7 @@
     <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="own_css.css">
+    <link rel="stylesheet" href="watchlist.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -43,10 +44,149 @@
     <a href="home.html">
         <img class="d-none d-md-block overlay-logo" src="img/kangaroo-128-w.png" alt="logo">
     </a>
-    <h1 class="overlay overlay-smaller">Your WatchList.</h1>
+    <h1 class="overlay">WatchList.</h1>
 </div>
-<div class="container-fluid bg-primary min-vh-100">
+<div class="container-body d-flex  min-vh-100">
+    <div class="width-aside  min-vh-100 pt-5 padding-aside text-light">
+        <div class="padding-watchlists">
+            <p class="text-aside-big pb-5 pt-4 times-roman">  Your Watch Lists</p>
+            <ul class="container text-white text-aside list-style pb-4 list-group">
+                <li class="list-group-item bg-black border-0 border-top border-start border-light rounded-0 text-light"><p class="times-roman">Zoznam 1</p></li>
+                <li class="list-group-item bg-black border-0 border-top border-start border-light rounded-0 text-light"><p class="times-roman">toto budem dnes pozerat</p></li>
+                <li class="list-group-item bg-black border-0 border-top border-start border-light rounded-0 text-light"><p class="times-roman">zoznam horory</p></li>
+                <li class="list-group-item bg-black border-0 border-top border-start border-light rounded-0 text-light"><p class="times-roman">TOP 20 to watch</p></li>
+                <li class="list-group-item bg-black border-0 border-top border-start border-light rounded-0 text-light"><p class="times-roman">Default co ma zaujalo</p></li>
+            </ul>
+            <div class="container  border-start border-light justify-content-start">
+                <p class="text-light h5 pb-2">add new below :)</p>
+                <form action="your_form_action_url" method="post" class="row">
+                    <div class="col-10 pb-3">
+                        <input type="text" class=" form-control times-roman form-in rounded-0" id="new_list" placeholder="enter new list">
+                    </div>
+                    <div class="col-5">
+                        <button type="submit" class="btn btn-warning button-signup rounded-0">
+                            <span class="times-roman text-form-2 fw-bold">Add list</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="width-body  min-vh-100 text-light">
+        <div class="row w-100 text-center pt-5">
+            <p class="pt-5 list-name times-roman">Name: Your ultra giga horror movie list</p>
+        </div>
+        <div class="container-fluid">
+            <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+                <li class="padding-card">
+                    <div class="card bg-dark text-light width-card">
+                        <div class="img-container rounded-0">
+                            <img class="card-img-top" src="img/add-2935429_1280.webp" alt="Fotka filmu">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-2">Add movie to this list</h5>
 
+                            <a href="#" class="btn btn-warning">Add new movie</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="padding-card">
+                    <div class="card bg-dark text-light width-card">
+                        <div class="img-container">
+                            <img class="card-img-top" src="img/MV5BM2M1MmVhNDgtNmI0YS00ZDNmLTkyNjctNTJiYTQ2N2NmYzc2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg" alt="Fotka filmu">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-2">Taxi Driver 1987</h5>
+
+                            <a href="#" class="btn btn-warning me-2">Add to stash</a>
+                            <a href="#" class="btn btn-warning m-when-need">Remove</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="padding-card">
+                    <div class="card bg-dark text-light width-card" >
+                        <div class="img-container">
+                            <img class="card-img-top" src="img/MV5BOTI5MjNjMTMtN2NiNC00YjBlLTgzMWQtMGRhZDZkYmY1NGU2XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg" alt="Fotka filmu">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-2">Godzilla Minus One 2024</h5>
+
+                            <a href="#" class="btn btn-warning me-2">Add to stash</a>
+                            <a href="#" class="btn btn-warning m-when-need">Remove</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="padding-card">
+                    <div class="card bg-dark text-light width-card">
+                        <div class="img-container">
+                            <img class="card-img-top" src="img/MV5BOTI5MjNjMTMtN2NiNC00YjBlLTgzMWQtMGRhZDZkYmY1NGU2XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg" alt="Fotka filmu">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-2">Godzilla Minus One 2024</h5>
+
+                            <a href="#" class="btn btn-warning me-2">Add to stash</a>
+                            <a href="#" class="btn btn-warning m-when-need">Remove</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="padding-card">
+                    <div class="card bg-dark text-light width-card">
+                        <div class="img-container">
+                            <img class="card-img-top" src="img/MV5BM2M1MmVhNDgtNmI0YS00ZDNmLTkyNjctNTJiYTQ2N2NmYzc2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg" alt="Fotka filmu">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-2">Taxi Driver 1987</h5>
+
+                            <a href="#" class="btn btn-warning me-2">Add to stash</a>
+                            <a href="#" class="btn btn-warning m-when-need">Remove</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="padding-card">
+                    <div class="card bg-dark text-light width-card" >
+                        <div class="img-container">
+                            <img class="card-img-top" src="img/MV5BOTI5MjNjMTMtN2NiNC00YjBlLTgzMWQtMGRhZDZkYmY1NGU2XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg" alt="Fotka filmu">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-2">Godzilla Minus One 2024</h5>
+
+                            <a href="#" class="btn btn-warning me-2">Add to stash</a>
+                            <a href="#" class="btn btn-warning m-when-need">Remove</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="padding-card">
+                    <div class="card bg-dark text-light width-card">
+                        <div class="img-container">
+                            <img class="card-img-top" src="img/MV5BM2M1MmVhNDgtNmI0YS00ZDNmLTkyNjctNTJiYTQ2N2NmYzc2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg" alt="Fotka filmu">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-2">Taxi Driver 1987</h5>
+
+                            <a href="#" class="btn btn-warning me-2">Add to stash</a>
+                            <a href="#" class="btn btn-warning m-when-need">Remove</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="padding-card">
+                    <div class="card bg-dark text-light width-card" >
+                        <div class="img-container">
+                            <img class="card-img-top" src="img/MV5BOTI5MjNjMTMtN2NiNC00YjBlLTgzMWQtMGRhZDZkYmY1NGU2XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg" alt="Fotka filmu">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-2">Godzilla Minus One 2024</h5>
+
+                            <a href="#" class="btn btn-warning me-2">Add to stash</a>
+                            <a href="#" class="btn btn-warning m-when-need">Remove</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid text-center">
+            <h2> <- 1 2 3 -></h2>
+        </div>
+    </div>
 </div>
 <section class="container-fluid  pb-2">
     <div class="row text-center justify-content-center">

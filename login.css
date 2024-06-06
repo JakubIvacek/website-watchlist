@@ -33,7 +33,7 @@
     left: 25px;
 }
 .create-text{
-    font-size: 110px;
+    font-size: 90px;
     position: relative;
     top: -110px;
     z-index: 20;
@@ -184,7 +184,6 @@ input[type="password"]
     position: relative;
     bottom:60px;
 }
-
 @media(max-width:1000px){
     .overlay{
         font-size:110px;
@@ -280,14 +279,48 @@ input[type="password"]
     .position-icon{
         position: relative;
         top: -45px;
-        left: 85%;
+        left: 90%;
         width: 45px;
+    }
+}
+@media(max-width: 650px){
+    .position-icon{
+        position: relative;
+        left: 87%;
+    }
+}
+@media(max-width: 550px){
+    .position-icon{
+        position: relative;
+        left: 84%;
+    }
+    .create-text{
+        font-size: 50px;
+    }
+}
+@media(max-width: 530px){
+    .overlay{
+        top:120px;
+        font-size: 90px;
+    }
+    .text-form{
+        font-size: 20px;
     }
 }
 @media(max-device-width: 400px){
     .footer-big{
         position: relative;
         left:-10Px;
+    }
+}
+@media(min-width: 1460px){
+    .position-icon{
+        position: relative;
+        top: -49px;
+        left: 92%;
+    }
+    .create-text{
+        font-size: 100px;
     }
 }
 @media(max-device-width:600px){
