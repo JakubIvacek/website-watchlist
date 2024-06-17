@@ -51,7 +51,7 @@
     padding:15Px;
 }
 .list-name{
-    font-size: 55px;
+    font-size: 40px;
 }
 .width-card{
     width: 17rem;
@@ -62,14 +62,13 @@
 }
 .list-group-horizontal .list-group-item {
     border: none;
-    padding: 0;
 }
 .list-group-horizontal .form-select,
 .list-group-horizontal .form-control {
-    width: 100%;
-    margin: 10px;
-    margin-top: 20Px;
-    margin-bottom: 50Px;
+
+}
+.padding-form{
+    padding-left: 40Px;
 }
 .times-roman {
     font-family: "Times New Roman", Times, serif;
@@ -131,20 +130,14 @@
     font-size: 50PX;
 }
 @media(max-width: 1550px){
-    .overlayStash {
-        font-size: 130px;
 
-    }
 }
 @media(max-width:1200px){
 
     .list-name{
-        font-size: 45px;
+        font-size: 35px;
     }
-    .overlayStash {
-        font-size: 120px;
 
-    }
 }
 @media(max-width:1000px) {
     .width-aside{
@@ -154,7 +147,7 @@
         width: 65%;
     }
     .list-name{
-        font-size: 40px;
+        font-size: 30px;
     }
     .pos-rel{
         right: 145Px;
@@ -168,19 +161,14 @@
         width: 60%;
     }
     .list-name{
-        font-size:37px;
+        font-size:27px;
     }
     .pos-rel{
         right: 140Px;
     }
     .overlayStash {
-        font-size: 100px;
+        font-size: 150px;
 
-    }
-}
-@media(max-width: 770px){
-    .width-card{
-        width: 18rem;
     }
 }
 @media(max-width: 600px){
@@ -195,12 +183,15 @@
         top: 120px;
     }
     .list-name{
-        font-size: 33px;
+        font-size: 23px;
     }
     .img-container {
         width: 100%;
         height: 250px; /* Adjust this height as needed */
         overflow: hidden;
+    }
+    .width-card{
+        width: 18rem;
     }
     .m-when-need{
         margin-top: 10Px;
@@ -220,7 +211,7 @@
         font-size: 18px;
     }
     .overlayStash {
-        font-size: 80px;
+        font-size: 130px;
 
     }
 }
@@ -246,5 +237,11 @@
     .m-when-need{
         position: relative;
         top: -5Px;
+    }
+    .list-group-horizontal .list-group-item {
+        padding: 5px 10px 5px 10px;
+    }
+    .overlayStash{
+        top:110px;
     }
 }

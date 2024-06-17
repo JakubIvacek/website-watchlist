@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home Page</title>
+    <title>Stash page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="own_css.css">
-    <link rel="stylesheet" href="watchlist.css">
+    <link rel="stylesheet" href="stash.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -47,41 +47,65 @@
     <a href="home.html">
         <img class="d-none d-md-block overlay-logo" src="img/kangaroo-128-w.png" alt="logo">
     </a>
-    <h1 class="overlay">WatchList.</h1>
+    <h1 class="overlayStash">Stash.</h1>
 </div>
-<section class="container-fluid row min-vh-100 justify-content-center pt-5">
+<section class="container-body row min-vh-100 justify-content-center pt-5 mt-5">
     <div class="col-10 col-md-9 col-xl-7 col-xxl-6 mobile-right">
-        <ul class="list-group justify-content-center watch-lists ">
-            <li class="list-group-item bg-black border-0">
-                <p class="times-roman h1 pt-2 text-light">Manage Your Watchlists</p>
+        <ul class="list-group list-group-horizontal row watch-lists">
+            <li class="list-group-item bg-black col-12 padding-form rounded-2">
+                <p class="times-roman h1 pt-2 text-light ps-1">Search in Stash</p>
             </li>
-            <li class="list-group-item  times-roman bg-secondary bg-black border-0 ps-3 pe-4">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected class="times-roman">Select Watchlist to open</option>
-                    <option value="1" class="times-roman">One</option>
-                    <option value="2" class="times-roman">Two</option>
-                    <option value="3" class="times-roman">Three</option>
+            <li class="list-group-item bg-black col-6 col-lg-3">
+                <select class="form-select times-roman " aria-label="Default select example">
+                    <option selected class="times-roman">Select Genre</option>
+                    <option value="1" class="times-roman">Horror</option>
+                    <option value="2" class="times-roman">Comedy</option>
+                    <option value="3" class="times-roman">Action</option>
                 </select>
             </li>
-            <li class="list-group-item justify-content-center pb-3 bg-black border-0">
-                <form action="your_form_action_url" method="post" class="row justify-content-center align-items-baseline">
-                    <div class="col-8 col-lg-10 ">
-                        <input type="text" class="form-control times-roman form-in" id="new_list" placeholder="Add new WatchList">
-                    </div>
-                    <div class="col-4 col-lg-2 text-center">
-                        <button type="submit" class="btn btn-warning button-signup ">
-                            <span class="times-roman text-form-2 fw-bold ">Add new</span>
-                        </button>
-                    </div>
-                </form>
+            <li class="list-group-item bg-black col-6 col-lg-3">
+                <select class="form-select times-roman" aria-label="Default select example">
+                    <option selected class="times-roman">Year Published</option>
+                    <option value="1" class="times-roman">2024</option>
+                    <option value="2" class="times-roman">2023</option>
+                    <option value="3" class="times-roman">2022</option>
+                    <option value="4" class="times-roman">2021</option>
+                    <option value="5" class="times-roman">2020</option>
+                    <option value="6" class="times-roman">2019</option>
+                    <option value="7" class="times-roman">2018</option>
+
+                </select>
+            </li>
+            <li class="list-group-item bg-black col-6 col-lg-3">
+                <select class="form-select times-roman" aria-label="Default select example">
+                    <option selected class="times-roman">Year Stashed</option>
+                    <option value="1" class="times-roman">2024</option>
+                    <option value="2" class="times-roman">2023</option>
+                    <option value="3" class="times-roman">2022</option>
+                    <option value="4" class="times-roman">2021</option>
+                </select>
+            </li>
+            <li class="list-group-item bg-black col-6 col-lg-3">
+                <select class="form-select times-roman" aria-label="Default select example">
+                    <option selected class="times-roman">Newer to Older</option>
+                    <option value="1" class="times-roman">Older to Newer</option>
+                    <option value="3" class="times-roman">Best Rating</option>
+                    <option value="4" class="times-roman">Worst Rating</option>
+                </select>
+            </li>
+            <li class="list-group-item bg-black col-12 pb-3 justify-content-center rounded-2">
+                <div class="container-fluid position-relative">
+                    <input type="text" class="form-control times-roman form-in text-center pr-5" id="new_list" placeholder="Search for movie in stash">
+                    <i class="fas fa-search position-absolute" style="right: 25px; top: 50%; transform: translateY(-50%);"></i>
+                </div>
             </li>
         </ul>
     </div>
-    <div class=" col-12 min-vh-100 text-light mobile-right">
-        <div class="row w-100 text-center pt-5">
-            <p class="pt-5 list-name times-roman mobile-right">Movies to watch this month</p>
-        </div>
+    <div class=" col-12 min-vh-100 text-light mobile-right pt-5">
         <div class="container">
+            <div class="row ps-5">
+                <h1 class="text-light date-text">May - 2024</h1>
+            </div>
             <ul class=" list-unstyled  d-flex flex-wrap justify-content-center">
                 <li class="padding-card ">
                     <div class="card bg-black text-light width-card">
@@ -89,7 +113,7 @@
                             <img class="card-img-top" src="img/add-2935429_1280.webp" alt="Fotka filmu">
                         </div>
                         <div class="card-body ">
-                            <h5 class="card-title pt-2 times-roman">Add movie to this list</h5>
+                            <h5 class="card-title pt-2 times-roman">Add movie you watched</h5>
                             <a href="#" class="btn btn-warning">Add new movie</a>
                             <i class="fas fa-arrow-left arrow-left"></i>
                             <i class="fas fa-arrow-right arrow-right"></i>
@@ -125,13 +149,12 @@
                     </div>
                 </li>
                 <li class="padding-card">
-                    <div class="card bg-black text-light width-card">
+                    <div class="card bg-black text-light width-card" >
                         <div class="img-container">
                             <img class="card-img-top" src="img/MV5BOTI5MjNjMTMtN2NiNC00YjBlLTgzMWQtMGRhZDZkYmY1NGU2XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg" alt="Fotka filmu">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title pt-2 times-roman">Godzilla Minus One - 2024</h5>
-
                             <a href="#" class="btn btn-warning me-2">Add to stash</a>
                             <a href="#" class="btn btn-warning m-when-need">Remove</a>
                             <i class="fas fa-arrow-left arrow-left"></i>
@@ -146,22 +169,6 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title pt-2 times-roman">Taxi Driver - 1987</h5>
-
-                            <a href="#" class="btn btn-warning me-2">Add to stash</a>
-                            <a href="#" class="btn btn-warning m-when-need">Remove</a>
-                            <i class="fas fa-arrow-left arrow-left"></i>
-                            <i class="fas fa-arrow-right arrow-right"></i>
-                        </div>
-                    </div>
-                </li>
-                <li class="padding-card">
-                    <div class="card bg-black text-light width-card" >
-                        <div class="img-container">
-                            <img class="card-img-top" src="img/MV5BOTI5MjNjMTMtN2NiNC00YjBlLTgzMWQtMGRhZDZkYmY1NGU2XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg" alt="Fotka filmu">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title pt-2 times-roman">Godzilla Minus One - 2024</h5>
-
                             <a href="#" class="btn btn-warning me-2">Add to stash</a>
                             <a href="#" class="btn btn-warning m-when-need">Remove</a>
                             <i class="fas fa-arrow-left arrow-left"></i>
@@ -176,7 +183,29 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title pt-2 times-roman">Taxi Driver - 1987</h5>
-
+                            <a href="#" class="btn btn-warning me-2">Add to stash</a>
+                            <a href="#" class="btn btn-warning m-when-need">Remove</a>
+                            <i class="fas fa-arrow-left arrow-left"></i>
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class=" col-12 min-vh-100 text-light mobile-right">
+        <div class="container">
+            <div class="row ps-5">
+                <h1 class="text-light date-text">April - 2024</h1>
+            </div>
+            <ul class=" list-unstyled  d-flex flex-wrap justify-content-center">
+                <li class="padding-card">
+                    <div class="card bg-black text-light width-card">
+                        <div class="img-container">
+                            <img class="card-img-top" src="img/MV5BM2M1MmVhNDgtNmI0YS00ZDNmLTkyNjctNTJiYTQ2N2NmYzc2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg" alt="Fotka filmu">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-2 times-roman">Taxi Driver - 1987</h5>
                             <a href="#" class="btn btn-warning me-2">Add to stash</a>
                             <a href="#" class="btn btn-warning m-when-need">Remove</a>
                             <i class="fas fa-arrow-left arrow-left"></i>
@@ -191,7 +220,20 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title pt-2 times-roman">Godzilla Minus One - 2024</h5>
-
+                            <a href="#" class="btn btn-warning me-2">Add to stash</a>
+                            <a href="#" class="btn btn-warning m-when-need">Remove</a>
+                            <i class="fas fa-arrow-left arrow-left"></i>
+                            <i class="fas fa-arrow-right arrow-right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="padding-card">
+                    <div class="card bg-black text-light width-card" >
+                        <div class="img-container">
+                            <img class="card-img-top" src="img/MV5BOTI5MjNjMTMtN2NiNC00YjBlLTgzMWQtMGRhZDZkYmY1NGU2XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg" alt="Fotka filmu">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-2 times-roman">Godzilla Minus One - 2024</h5>
                             <a href="#" class="btn btn-warning me-2">Add to stash</a>
                             <a href="#" class="btn btn-warning m-when-need">Remove</a>
                             <i class="fas fa-arrow-left arrow-left"></i>
