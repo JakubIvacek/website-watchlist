@@ -130,6 +130,9 @@
 .date-text{
     font-size: 50PX;
 }
+.smaller{
+    font-size: 130Px;
+}
 @media(max-width: 1550px){
     .overlayStash {
         font-size: 130px;
@@ -144,6 +147,9 @@
     .overlayStash {
         font-size: 120px;
 
+    }
+    .smaller{
+        font-size: 110Px;
     }
 }
 @media(max-width:1000px) {
@@ -176,6 +182,9 @@
     .overlayStash {
         font-size: 100px;
 
+    }
+    .smaller{
+        font-size: 100Px;
     }
 }
 @media(max-width: 770px){
