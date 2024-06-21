@@ -47,6 +47,7 @@
     <a href="home.html">
         <img class="overlay-logo" src="img/kangaroo-128-w.png" alt="logo">
     </a>
+    <h1 class="overlay smaller d-none d-xl-block">WatchList.</h1>
 </div>
 <section class="container-fluid min-vh-20 padding-mobile">
     <div class="row justify-content-center">
@@ -77,58 +78,83 @@
         </div>
         <div class="col-11 col-md-8 col-lg-8 col-xl-6 order-1 order-md-2 background align-items-center align-content-center rounded-3">
             <div class="embed-responsive embed-responsive-16by9 w-100 h-100">
-                <iframe  class="width-video" src="https://www.youtube-nocookie.com/embed/T5IligQP7Fo?si=ZnnDEMvCRz_6aESB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe  class="width-video" src="https://www.youtube-nocookie.com/embed/T5IligQP7Fo?si=ZnnDEMvCRz_6aESB" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
             </div>
         </div>
     </div>
 </section>
 <section class="container-fluid min-vh-20  pt-5 pb-5">
-    <div class="container background  rounded-3 justify-content-center text-center">
+    <div class="container   rounded-3 justify-content-center text-center background ">
         <div class="row text-center">
             <p class="text-light text-down"> Rate Movie.</p>
         </div>
-        <ul class="list-group list-group-horizontal row justify-content-center">
-            <li class="list-group-item bg-black col-6 col-lg-3">
-                <h3 class="times-roman text-light">Rating 7.3/10</h3>
-            </li>
-            <li class="list-group-item bg-black col-6 col-lg-3">
-                <div class="container-fluid position-relative">
-                    <input type="text" class="form-control times-roman form-in text-center pr-5" id="new_list" placeholder="enter new rating 0-10" aria-describedby="basic-addon1">
+        <ul class="list-group list-group-horizontal row justify-content-center  ">
+            <li style="padding-top:11Px;" class="rounded-3 list-group-item  col-8 col-lg-6 pt-2 rounded-0 bg-black   justify-content-center align-content-center">
+                <div class="container-fluid position-relative justify-content-center align-content-center ">
+                    <div class="row ps-3 pt-3">
+                        <label class="times-roman text-light h4" for="new_list">Rating 7.3/10</label>
+                    </div>
+                    <input type="text" class="rounded-3 input-comment-add background text-center" id="new_list" placeholder="Enter new rating 0-10" aria-describedby="basic-addon1">
+                    <button class="btn btn-warning  mt-3">
+                        <span class="times-roman fw-bold h5">Change rating</span>
+                    </button>
                 </div>
-            </li>
-            <li class="list-group-item bg-black col-6 col-lg-3">
-                <button class="btn btn-warning">
-                    <span class="times-roman fw-bold h5">Change rating</span>
-                </button>
+
             </li>
         </ul>
-        <div class="row justify-content-center">
-            <div class="col-12 col-xl-5 pt-5 pe-3">
-                <div class="row text-start pb-2 ps-3">
-                    <p class="times-roman text-light movie-name">Your Comment</p>
-                </div>
-                <h3 class="times-roman text-light" style="line-height: 1.6;">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting,
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                </h3>
+        <div class="row justify-content-center pt-5 mt-5">
+            <div class="col-12 col-xl-6 pt-2 pe-3 ps-3 ">
+                <ul class="comment-section rounded-3 mb-5 bg-black pe-3">
+                    <li class="pt-2"></li>
+                    <li class=" rounded-3 pb-2 pt-2 mb-4 ps-3 pe-3 text-light background ">
+                        <div class="row text-start ps-4 pt-2">
+                            <h5 class="times-roman fw-bold text-warning" >Comment name</h5>
+                            <p class="times-roman comment-date " >14.5.2024 14:45:56</p>
+                        </div>
+                        <p class="times-roman " >
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            It has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                            like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </li>
+                    <li class="rounded-3 pb-2 pt-2 mb-4 ps-3 pe-3 text-light background">
+                        <div class="row text-start ps-4 pt-2">
+                            <h5 class="times-roman fw-bold text-warning" >Comment name</h5>
+                            <p class="times-roman comment-date" >14.5.2024 14:45:56</p>
+                        </div>
+                        <p class="times-roman " >
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </li>
+                    <li class="text-light rounded-3 pb-2 pt-2 mb-4 ps-3 pe-3 background">
+                        <div class="row text-start ps-4 pt-2">
+                            <h5 class="times-roman fw-bold text-warning" >Comment name</h5>
+                            <p class="times-roman comment-date" >14.5.2024 14:45:56</p>
+                        </div>
+                        <p class="times-roman " >
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            cluding versions of Lorem Ipsum.cluding versions of Lorem Ipsum.cluding versions of Lorem Ipsum.
+                        </p>
+                    </li>
+                </ul>
             </div>
-            <div class="col-10 col-xl-5 pt-0 pt-xl-5 times-roman">
-                <div class="row text-start pb-5 pt-0 ps-3 pt-xl-5"></div>
-                <div class="pt-5"></div>
-                <div data-mdb-input-init class="form-outline w-100 text-start">
-                    <label class="ps-3 times-roman h2 form-label text-light pb-2" for="textAreaExample">Change / Add comment</label>
-                    <textarea class="form-control times-roman" id="textAreaExample" rows="8"
-                              style="background: #f8f9fa; border: 1px solid #ced4da; border-radius: 5px; padding: 10px;"
+            <div class="col-10 col-xl-5 pt-0 pt-xl-5 times-roman pb-5 pb-xl-0 pt-0">
+                <div class="pt-0 pt-xl-2"></div>
+                <div data-mdb-input-init class=" w-100 text-start rounded-3 padding-mobile-comment white-input">
+                    <label class="ps-3 mb-2 times-roman h2 form-label text-light" for="textAreaExample">Add new comment</label>
+                    <input type="text" class="rounded-3 input-comment-add background" id="comment-name" placeholder="comment name"  aria-describedby="basic-addon1">
+                    <textarea class="rounded-3 input-comment-add background h-100" id="textAreaExample" rows="8"
                               placeholder="enter comment here"></textarea>
-                </div>
-                <div class="pt-3 text-start">
-                    <button class="btn btn-warning">
-                        <span class="times-roman fw-bold h5">Change comment</span>
+                    <button class="margin-button btn btn-warning mt-3">
+                        <span class="times-roman fw-bold h5">Add comment</span>
                     </button>
                 </div>
             </div>

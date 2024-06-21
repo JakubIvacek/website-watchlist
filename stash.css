@@ -73,10 +73,6 @@
 .list-group-horizontal .list-group-item {
     border: none;
 }
-.list-group-horizontal .form-select,
-.list-group-horizontal .form-control {
-
-}
 .padding-form{
     padding-left: 40Px;
 }
@@ -168,6 +164,45 @@
 .text-down{
     font-size: 80px;
 }
+.comment-section{
+    height: 50vh;
+    background-color: whitesmoke;
+    overflow-y: auto;
+    scrollbar-color: rgb(270, 195, 0) transparent;
+}
+.comment-date{
+    font-size:14px
+}
+.padding-comment-add{
+    padding-top: 200Px;
+}
+.w-0{
+    width: 1Px;
+    margin: 0px;
+}
+.padding-button{
+    padding-top:5Px;
+}
+.bg-light-gray::placeholder{
+    color:white;
+}
+.bg-light-gray{
+    color:white;
+}
+.input-comment-add{
+    width: 100%;
+    height: 40px;
+    background: black;
+    color:white;
+    border:none;
+    font-family:"Times New Roman", Times, serif;
+}
+.input-comment-add::placeholder{
+    color: white;
+}
+.margin-button{
+    margin-left: 17px;
+}
 @media(max-width: 1550px){
 
 }
@@ -177,6 +212,14 @@
         font-size: 35px;
     }
 
+}
+@media(max-width:1199px){
+    .padding-comment-add{
+        padding-top: 10Px;
+    }
+    .padding-button-bot{
+        padding-bottom:3Px;
+    }
 }
 @media(max-width:1000px) {
     .width-aside{
@@ -322,5 +365,12 @@
     }
     .padding-mobile{
         padding-top: 30Px;
+    }
+    .padding-button{
+        padding-top:15Px
+    }
+    .padding-mobile-comment{
+        position: relative;
+        left: -13Px;
     }
 }

@@ -140,6 +140,9 @@ ul {
     width: 100%;
     height: 200Px;
 }
+.bg-light-gray{
+    background: rgb(233, 233, 233);
+}
 @media(max-width:1000px){
     .overlay{
         font-size:110px;
