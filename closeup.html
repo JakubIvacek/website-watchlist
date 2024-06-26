@@ -88,25 +88,11 @@
         <div class="row text-center">
             <p class="text-light text-down"> Rate Movie.</p>
         </div>
-        <ul class="list-group list-group-horizontal row justify-content-center  ">
-            <li style="padding-top:11Px;" class="rounded-3 list-group-item  col-8 col-lg-6 pt-2 rounded-0 bg-black   justify-content-center align-content-center">
-                <div class="container-fluid position-relative justify-content-center align-content-center ">
-                    <div class="row ps-3 pt-3">
-                        <label class="times-roman text-light h4" for="new_list">Rating 7.3/10</label>
-                    </div>
-                    <input type="text" class="rounded-3 input-comment-add background text-center" id="new_list" placeholder="Enter new rating 0-10" aria-describedby="basic-addon1">
-                    <button class="btn btn-warning  mt-3">
-                        <span class="times-roman fw-bold h5">Change rating</span>
-                    </button>
-                </div>
-
-            </li>
-        </ul>
-        <div class="row justify-content-center pt-5 mt-5">
-            <div class="col-12 col-xl-6 pt-2 pe-3 ps-3 ">
+        <div class="row justify-content-center  mt-4">
+            <div class="col-12 col-xl-6 pt-2 pe-3 ps-3 order-2 order-xl-1">
                 <ul class="comment-section rounded-3 mb-5 bg-black pe-3">
                     <li class="pt-2"></li>
-                    <li class=" rounded-3 pb-2 pt-2 mb-4 ps-3 pe-3 text-light background ">
+                    <li class=" rounded-3 pb-2 pt-2 mb-4 ps-3 pe-3 text-light background2 ">
                         <div class="row text-start ps-4 pt-2">
                             <h5 class="times-roman fw-bold text-warning" >Comment name</h5>
                             <p class="times-roman comment-date " >14.5.2024 14:45:56</p>
@@ -121,7 +107,7 @@
                             like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
                     </li>
-                    <li class="rounded-3 pb-2 pt-2 mb-4 ps-3 pe-3 text-light background">
+                    <li class="rounded-3 pb-2 pt-2 mb-4 ps-3 pe-3 text-light background2">
                         <div class="row text-start ps-4 pt-2">
                             <h5 class="times-roman fw-bold text-warning" >Comment name</h5>
                             <p class="times-roman comment-date" >14.5.2024 14:45:56</p>
@@ -132,7 +118,7 @@
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
                     </li>
-                    <li class="text-light rounded-3 pb-2 pt-2 mb-4 ps-3 pe-3 background">
+                    <li class="text-light rounded-3 pb-2 pt-2 mb-4 ps-3 pe-3 background2">
                         <div class="row text-start ps-4 pt-2">
                             <h5 class="times-roman fw-bold text-warning" >Comment name</h5>
                             <p class="times-roman comment-date" >14.5.2024 14:45:56</p>
@@ -146,16 +132,31 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-10 col-xl-5 pt-0 pt-xl-5 times-roman pb-5 pb-xl-0 pt-0">
+            <div class="col-10 col-xl-5 pt-0  times-roman pb-5 pb-xl-0 pt-0 order-1 order-xl-2">
                 <div class="pt-0 pt-xl-2"></div>
                 <div data-mdb-input-init class=" w-100 text-start rounded-3 padding-mobile-comment white-input">
+                    <div class="row ps-3 ">
+                        <label class="times-roman text-light h4" for="new_listd">Rating 7.3/10</label>
+                    </div>
+                    <div class="row">
+                        <div class ="col-7">
+                            <input type="text" class="rounded-3 input-comment-add background2 text-center" id="new_listd" placeholder="Enter new rating 0-10" aria-describedby="basic-addon1">
+                        </div>
+                        <div class ="col-5 justify-content-center align-content-center text-center">
+                            <button class="btn btn-warning  ">
+                                <span class="times-roman fw-bold h5">Change rating</span>
+                            </button>
+                        </div>
+                    </div>
                     <label class="ps-3 mb-2 times-roman h2 form-label text-light" for="textAreaExample">Add new comment</label>
-                    <input type="text" class="rounded-3 input-comment-add background" id="comment-name" placeholder="comment name"  aria-describedby="basic-addon1">
-                    <textarea class="rounded-3 input-comment-add background h-100" id="textAreaExample" rows="8"
+                    <input type="text" class="rounded-3 input-comment-add background2" id="comment-name" placeholder="comment name"  aria-describedby="basic-addon1">
+                    <textarea class="rounded-3 input-comment-add background2 h-100" id="textAreaExample" rows="8"
                               placeholder="enter comment here"></textarea>
-                    <button class="margin-button btn btn-warning mt-3">
-                        <span class="times-roman fw-bold h5">Add comment</span>
-                    </button>
+                    <div class="container-fluid text-end">
+                        <button class="margin-button btn btn-warning mt-2 me-3">
+                            <span class="times-roman fw-bold h5">Add comment</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -143,6 +143,13 @@ ul {
 .bg-light-gray{
     background: rgb(233, 233, 233);
 }
+.big-home-text{
+    font-size: 80px;
+    color:  #ffcc00
+}
+.list-style{
+    list-style: circle;
+}
 @media(max-width:1000px){
     .overlay{
         font-size:110px;

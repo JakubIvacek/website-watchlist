@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Signup</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="stash.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="register.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -54,26 +56,22 @@
             </p>
         </div>
         <div class="row justify-content-center start upper-mobile">
-            <form class=" bg-black ptop col-10 col-md-8 col-xl-6 justify-content-center rounded-5">
-                <div class="form-group pb-3 ps-3 pe-3">
-                    <label for="exampleInputEmail1" class="pb-2 font-form">Email</label>
-                    <input type="email" class="form-control times-roman form-in rounded-0"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <form class=" bg-black col-10 col-md-8 col-xl-6 justify-content-center rounded-5  ptop ">
+                <div class="form-group pb-2 ps-3 pe-4 me-1 pt-4">
+                    <input type="email" class="text-start background2 rounded-3 bigger-input"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
-                <div class="form-group pb-3 ps-3 pe-3">
-                    <label for="nickname" class="pb-2 font-form">Nickname</label>
-                    <input type="text" class="form-control times-roman form-in rounded-0"  id="nickname" aria-describedby="emailHelp" placeholder="Enter nickname">
+                <div class="form-group pb-2 ps-3 pe-4 me-1">
+                    <input type="text" class="text-start background2 rounded-3 bigger-input"  id="nickname" aria-describedby="emailHelp" placeholder="Enter nickname">
                 </div>
-                <div class="form-group pb-3 ps-3 pe-3">
-                    <label for="password-toggle2" class="pb-2 font-form">Password</label>
-                    <input type="password" class="form-control times-roman form-in rounded-0" id="password-toggle2" placeholder="Enter password">
+                <div class="form-group pb-2 ps-3 pe-4 me-1">
+                    <input type="password" class="text-start background2 rounded-3 bigger-input" id="password-toggle2" placeholder="Enter password">
 
                 </div>
-                <div class="form-group pb-4 ps-3 pe-3">
-                    <label for="password-toggle3" class="pb-2 font-form">Password again</label>
-                    <input type="password" class="form-control times-roman form-in rounded-0" id="password-toggle3" placeholder="Enter password again">
-                    <img onclick="togglePasswordVisibilityRegister()" src="img/eye.png" alt="show password icon" class="position-icon" id="password-togg">
+                <div class="form-group pb-2 ps-3 pe-4 me-1">
+                    <input type="password" class="text-start background2 rounded-3 bigger-input" id="password-toggle3" placeholder="Enter password again">
+                    <i class="fas fa-eye toggle-password icon-toggle" id="togglePassword"></i>
                 </div>
-                <button type="submit" class="btn btn-warning button-signup rounded-0"><span class="times-roman text-form-2 fw-bold">Create account</span></button>
+                <button type="submit" class="btn btn-warning button-signup rounded-3"><span class="button-bigger fw-bold">Create account</span></button>
             </form>
         </div>
     </div>
