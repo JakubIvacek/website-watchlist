@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="own_css.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="body">
+<nav class="w-100 row pt-3 pad_bot">
+    <div class="col-6">
+        <div class="container-fluid">
+            <ul class="row list-unstyled justify-content-between align-items-center">
+                <li class="col-6 text-end">
+                    <a href="login.html">
+                        <img src="img/account.png" alt="icon login/account" class="account">
+                    </a>
+
+                </li>
+                <li class="col-6 text-start">
+                    <a class="">
+                        <img src="img/logout.png" alt="icon logout" class="logout">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid text-center pb-5">
+    <a href="home.html">
+        <img class="d-none d-md-block overlay-logo" src="img/kangaroo-128-w.png" alt="logo">
+    </a>
+    <h1 class="overlay">Admin</h1>
+</div>
+<section class="container-fluid min-vh-20  pt-5 pb-5">
+    <div class="container   rounded-3 justify-content-center text-center background ">
+        <div class="row text-center">
+            <p class="text-light text-down h1"> Add show/movie</p>
+            <form class="form">
+                <div class=" pb-1 ps-3 pe-4 me-1 pt-5 text-start text-yellow">
+                    <label class="form-label m-1 ps-4 h4" for="customFile2">Name</label>
+                    <input type="text" class="background2 text-start rounded-3 bigger-input" id="movieName" aria-describedby="emailHelp" placeholder="Enter name of movie/show">
+                </div>
+                <div class="form-group pb-1 ps-3 pe-4 me-1 text-start text-yellow">
+                    <label class="form-label m-1 ps-4 h4" for="customFile2">Length</label>
+                    <input type="text" class="background2 text-start  rounded-3 bigger-input" id="movieLength" placeholder="Enter length of movie/show">
+                </div>
+                <div class="form-group pb-1 ps-3 pe-4 me-1 text-start text-yellow">
+                    <label class="form-label m-1 ps-4 h4" for="customFile2">Iframe</label>
+                    <input type="text" class="background2 text-start rounded-3 bigger-input" id="youtubeIframe" placeholder="Enter youtube trailer iframe">
+                </div>
+                <div class="form-group ps-3 pe-4 me-1 pb-1 mb-3 text-start text-yellow">
+                    <label class="form-label  m-1 ps-4 h4" for="customFile2">Date</label>
+                    <input type="text" class="background2 text-start  rounded-3 bigger-input" id="movieDate" placeholder="Enter date of movie/show">
+                </div>
+                <div class="text-start form-group ps-3 pe-4 me-1 pb-3 mb-3 text-yellow">
+                    <label class="form-label  m-1 ps-4 h4" for="customFile2">Add image</label>
+                    <input type="file" class=" background2 text-start  rounded-3 bigger-input" id="customFile2" name="photo" />
+                </div>
+                <button type="submit" class="btn btn-warning ms-4 rounded-3"><span class="button-bigger fw-bold">Add show/movie </span></button>
+            </form>
+        </div>
+
+    </div>
+</section>
+<footer class="p-0 m-0 bg-color pb-1">
+    <div class="container-fluid bg-color footer-top-padding">
+        <div class="row justify-content-center align-text-bottom">
+            <div class="col-5 col-md-4 text-start">
+                <ul class=" d-flex flex-row list-unstyled justify-content-start align-items-start">
+                    <li class="mb-2 pe-2">
+                        <a class="footer-text "  href="#">
+                            <img src="img/login-black.png" class="width-footer-icon" alt="facebook logo">
+                        </a>
+
+                    </li>
+                    <li class="mb-2 pe-2">
+                        <a class="p-0 footer-text"  href="#">
+                            <img src="img/black-2.png" class="width-footer-icon" alt="facebook logo">
+                        </a>
+                    </li>
+                </ul>
+                <ul class=" d-flex flex-row list-unstyled justify-content-start align-items-start">
+                    <li class="mb-2 pe-2">
+                        <a class="footer-text" href="#">
+                            <img src="img/facebook.png" class="width-social" alt="facebook logo">
+                        </a>
+                    </li>
+                    <li class="mb-2 pe-2">
+                        <a class="footer-text" href="#">
+                            <img src="img/instagram.png" class="width-social" alt="instagram logo">
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="footer-text" href="#">
+                            <img src="img/twitter.png" class="width-social" alt="twitter logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-7 col-md-6">
+                <ul class="list-unstyled footer-links ">
+                    <li class="mb-2">
+                        <a class="footer-text">Terms and Conditions</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class=" footer-text">About us</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="footer-text link-height">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12 ">
+                <a href="home.html">
+                    <img src="img/kangaroo-128.png" class="logo-black" alt="logo black">
+                </a>
+                <p class="cp-small">&copy; Keno 2024</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

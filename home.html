@@ -77,52 +77,48 @@
             </a>
         </div>
     </section>
-    <section class="bg-black container-fluid pt-5">
-        <div class="row">
-            <div class="col-10 col-md-4 text-light text-center text-md-start ps-5 order-1 order-md-2 justify-content-center align-content-center">
-                <div class="container ps-0 ps-xl-3">
-                    <h1 class="big-home-text">Watchlists</h1>
-                    <ul class="list-style">
-                        <li>
-                            <h2 class="times-roman">make watchlists</h2>
-                        </li>
-                        <li>
-                            <h2 class="times-roman">save movies you wanna watch</h2>
-                        </li>
-                        <li>
-                            <h2 class="times-roman">add watched to stash</h2>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-12 col-md-8 order-2 order-md-1 ps-5">
-                <img src="img/watch.png" class="img-fluid" alt="img of stash">
-            </div>
+    <section>
+        <div class="w-100 row text-center pt-5">
+            <p class="text-white home-how-text ps-5">How does it work ?</p>
         </div>
     </section>
     <section class="bg-black container-fluid pt-5">
         <div class="row">
-            <div class="col-10 col-md-4 text-light text-center text-md-start ps-5 order-2 order-md-1 justify-content-center align-content-center">
-                <div class="container ps-0 ps-xl-3">
-                    <h1 class="big-home-text">Stash</h1>
-                    <ul class="list-style">
+            <div class="col-12 col-md-6 text-light text-center text-md-start  justify-content-center align-content-center">
+                <div class="container ps-0 ps-xl-3 text-center w-100 h-100">
+                    <h1 class="big-home-text home-watch">Watchlists</h1>
+                    <ul class="list-circle">
                         <li>
-                            <h2 class="times-roman">save watched movies</h2>
+                            <h2 class="times-roman smaller-mobile">create new Watchlists</h2>
                         </li>
                         <li>
-                            <h2 class="times-roman">add rating</h2>
+                            <h2 class="times-roman smaller-mobile">make list of movies/shows you want to watch</h2>
                         </li>
                         <li>
-                            <h2 class="times-roman">add comments</h2>
+                            <h2 class="times-roman smaller-mobile">add watched stuff to your stash</h2>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-md-8 order-1 order-md-2">
-                <img src="img/stash.png" class="img-fluid" alt="img of stash">
+            <div class="col-12 col-md-6 pt-5 pt-md-0 text-light text-center align-text-top text-md-start  justify-content-center align-content-center">
+                <div class="container ps-0 ps-xl-3 text-center w-100 h-100">
+                    <h1 class="big-home-text ps-3 home-stash">Stash</h1>
+                    <ul class="list-circle">
+                        <li>
+                            <h2 class="times-roman smaller-mobile">login or create new account</h2>
+                        </li>
+                        <li>
+                            <h2 class="times-roman smaller-mobile">save watched movies/shows to Stash</h2>
+                        </li>
+                        <li>
+                            <h2 class="times-roman smaller-mobile">add your rating or comment</h2>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
+
     <section class="container-fluid  pb-2">
         <div class="row text-center justify-content-center">
             <h1 class="text-light footer-big">WatchList.</h1>
@@ -169,12 +165,37 @@
                             <a class="footer-text">Terms and Conditions</a>
                         </li>
                         <li class="mb-2">
-                            <a class=" footer-text">About us</a>
+                            <button type="button" class="footer-text border-0 bg-transparent text-decoration-underline" data-toggle="modal" data-target="#exampleModal">
+                                Contact us
+                            </button>
                         </li>
                         <li class="mb-2">
-                            <a class="footer-text link-height">Contact</a>
+                            <a class=" footer-text">About</a>
                         </li>
                     </ul>
+                    <div class="modal fade pt-5" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-black text-light background-modal">
+                                <div class="modal-body">
+                                    <h1 class="modal-title ps-2" id="exampleModalLabel">Contact us</h1>
+                                    <form class="times-roman">
+                                        <div class="form-group ps-2 pe-2">
+                                            <input type="text" class="times-roman input-modal" id="name" placeholder="Enter name">
+                                        </div>
+                                        <div class="form-group pt-2 ps-2 pe-2">
+                                            <input type="email" class="times-roman input-modal" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted times-roman " style="color:white;">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <div class="form-group ps-2 pe-2 pb-3 pt-2">
+                                            <textarea name="Text1" id="message" rows="5" class="times-roman input-modal" placeholder="Enter your message"></textarea>
+                                        </div>
+                                        <button type="button" class="btn-own-black pe-2 ps-2 me-2 ms-2" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn-own">Send message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row text-center">

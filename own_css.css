@@ -13,6 +13,55 @@
     z-index: 10; /* Ensure it is on top of other elements */
     color: white; /* Adjust text color for visibility */
 }
+.background-modal{
+    box-shadow: 0px 0px 50px gray;
+}
+.input-modal{
+    background-color: black;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-left: 5Px;
+    padding-top: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px white;
+}
+.input-modal::placeholder{
+    color:white;
+}
+.input-modal:hover{
+    box-shadow: 0px 0px 20px #ffcc00;
+}
+.input-modal:focus{
+    box-shadow: 0px 0px 20px #ffcc00;
+}
+.btn-own{
+    color: black;
+    border:none;
+    background-color:#ffcc00;
+    border-radius: 5px;
+    padding: 5Px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px white;
+}
+.btn-own:hover{
+    box-shadow: 0px 0px 20px #ffcc00;
+}
+.btn-own-black{
+    color: white;
+    border:none;
+    background-color:black;
+    border-radius: 5px;
+    padding: 5Px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px white;
+}
+.btn-own-black:hover{
+    box-shadow: 0px 0px 20px #ffcc00;
+}
 .overlay-smaller{
     font-family:impact, fantasy;
     position: absolute;
@@ -150,6 +199,21 @@ ul {
 .list-style{
     list-style: circle;
 }
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+.red .green{
+    color: yellow;
+}
+.purple{
+    color:purple;
+}
+#orange{
+    color:orange;
+}
 @media(max-width:1000px){
     .overlay{
         font-size:110px;
@@ -212,18 +276,27 @@ ul {
         top:60px
     }
 }
+.home-how-text{
+    font-size: 80px;
+}
+@media(max-width: 800px){
+    .home-how-text{
+        font-size: 60px;
+    }
+}
+@media(max-width: 600px){
+    .home-how-text{
+        font-size: 50px;
+    }
+}
 @media(max-width: 500px){
     .overlay-logo{
         top: 120Px;
         left: 13%;
     }
 }
-@media(max-device-width: 400px){
-    .footer-big{
-        position: relative;
-        left:-10Px;
-    }
-}
+
+
 @media(max-device-width:600px){
     .overlay{
         font-size:70px;
@@ -310,4 +383,23 @@ ul {
     .overlay-logo{
         top: 100Px;
     }
+    .home-how-text{
+        font-size: 40px;
+    }
+    .big-home-text{
+        font-size: 55px;
+    }
+    .home-watch{
+        position: relative;
+        left: 15px;
+    }
+    .home-stash{
+        position: relative;
+        left: 7px;
+    }
+    .smaller-mobile{
+        font-size: 21px;
+    }
+}
+@media(max-device-width: 400px){
 }
