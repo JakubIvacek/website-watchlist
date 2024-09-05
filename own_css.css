@@ -18,8 +18,7 @@
 }
 .input-modal{
     background-color: black;
-    border-color: white;
-    border-width: 1px;
+    border:none;
     color: white;
     width: 100%;
     padding-bottom: 5px;
@@ -33,10 +32,12 @@
     color:white;
 }
 .input-modal:hover{
-    box-shadow: 0px 0px 20px #ffcc00;
+    border-color: white;
+    border-width: 1px;
 }
 .input-modal:focus{
-    box-shadow: 0px 0px 20px #ffcc00;
+    border-color: white;
+    border-width: 1px;
 }
 .btn-own{
     color: black;
@@ -113,7 +114,6 @@ ul {
 }
 .link-top:hover{
     color: rgb(320, 215, 0);
-    font-size: 102%;
 }
 .bigger-login:hover{
     color: rgb(320, 215, 0);
@@ -214,6 +214,11 @@ ul {
 #orange{
     color:orange;
 }
+.aboutus{
+    font-size: 60px;
+    color: white;
+
+}
 @media(max-width:1000px){
     .overlay{
         font-size:110px;
@@ -282,6 +287,13 @@ ul {
 @media(max-width: 800px){
     .home-how-text{
         font-size: 60px;
+    }
+}
+@media(max-width: 650px){
+    .aboutus{
+        font-size: 48px;
+        position: relative;
+        left: -30Px;
     }
 }
 @media(max-width: 600px){
@@ -400,6 +412,28 @@ ul {
     .smaller-mobile{
         font-size: 21px;
     }
+    .link-top{
+        font-size: 20px;
+    }
+    .link-top:focus{
+        font-size:  20px;
+    }
+    .link-top:hover{
+        font-size:  20px;
+    }
 }
-@media(max-device-width: 400px){
+@media(max-device-width:360px){
+    .overlay{
+        top:90px;
+    }
+    .logout{
+        width: 32px;
+        position: relative;
+        bottom:5px;
+    }
+    .account{
+        width:35px;
+        position: relative;
+        bottom:5px;
+    }
 }
