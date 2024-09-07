@@ -225,6 +225,11 @@
 @media(max-width: 1550px){
 
 }
+@media(max-width: 1400px){
+    .overlayStash {
+        top:125Px;
+    }
+}
 @media(max-width:1200px){
 
     .list-name{
@@ -376,7 +381,7 @@
         padding: 5px 10px 5px 10px;
     }
     .overlayStash{
-        top:110px;
+        top:130px;
     }
     .move-mobile{
         position: relative;

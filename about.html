@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="own_css.css">
+    <script src="contact.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body class="body">
-<nav class="w-100 row pt-3 pad_bot">
-    <div class="col-6">
+<nav class="w-100 row pt-3 pad_bot justify-content-center">
+    <div class="pt-2 pt-xl-0 col-7 col-xxl-4 order-1 order-xxl-1">
         <div class="ps-sm-0 ps-lg-5 row text-light text-center text-link">
             <div class="col-6 text-end">
                 <a class="link-top" href="stash.html">My Stash</a>
@@ -22,7 +24,17 @@
             </div>
         </div>
     </div>
-    <div class="col-6 align-content-center">
+    <div class="col-9 col-xxl-6 align-content-center justify-content-center order-3 order-xxl-2">
+        <form class="times-roman">
+            <div class="input-group rounded my-search">
+                <input type="search" class="form-control rounded bg-transparent border-0 text-white times-roman" placeholder="Search movie or show here" aria-label="Search" aria-describedby="search-addon" />
+                <span class="input-group-text border-0 bg-transparent" id="search-addon">
+                                                        <i class="fas fa-search text-white"></i>
+                                                      </span>
+            </div>
+        </form>
+    </div>
+    <div class=" pt-2 pt-xl-0 col-5 col-xxl-2 align-content-center order-2 order-xxl-3 text-center justify-content-center">
         <div class="container-fluid">
             <ul class="row list-unstyled justify-content-between align-items-center">
                 <li class="col-6 text-end justify-content-end">
@@ -72,7 +84,7 @@
             <div class="col-5 col-md-4 text-start">
                 <ul class=" d-flex flex-row list-unstyled justify-content-start align-items-start">
                     <li class="mb-2 pe-2">
-                        <a class="footer-text "  href="#">
+                        <a class="footer-text "  href="login.html">
                             <img src="img/login-black.png" class="width-footer-icon" alt="facebook logo">
                         </a>
 
@@ -115,29 +127,7 @@
                         <a class=" footer-text" href="about.html">About</a>
                     </li>
                 </ul>
-                <div class="modal fade pt-5" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content bg-black text-light background-modal">
-                            <div class="modal-body">
-                                <h1 class="modal-title ps-2" id="exampleModalLabel">Contact us</h1>
-                                <form class="times-roman">
-                                    <div class="form-group ps-2 pe-2">
-                                        <input type="text" class="times-roman input-modal" id="name" placeholder="Enter name">
-                                    </div>
-                                    <div class="form-group pt-2 ps-2 pe-2">
-                                        <input type="email" class="times-roman input-modal" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        <small id="emailHelp" class="form-text text-muted times-roman " style="color:white;">We'll never share your email with anyone else.</small>
-                                    </div>
-                                    <div class="form-group ps-2 pe-2 pb-3 pt-2">
-                                        <textarea name="Text1" id="message" rows="5" class="times-roman input-modal" placeholder="Enter your message"></textarea>
-                                    </div>
-                                    <button type="button" class="btn-own-black pe-2 ps-2 me-2 ms-2" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn-own">Send message</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="modalContainer"></div>
             </div>
         </div>
         <div class="row text-center">

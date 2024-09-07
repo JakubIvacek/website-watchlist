@@ -3,10 +3,16 @@
     padding: 0;
     font-family:impact, fantasy;
 }
+.btn-warning{
+    box-shadow: 0px 0px 10px white !important;
+}
+.btn-warning:hover{
+    box-shadow: 0px 0px 20px #ffcc00 !important;
+}
 .overlay {
     font-family:impact, fantasy;
     position: absolute;
-    top: 85px;
+    top: 125px;
     left: 50%;
     font-size: 170px;
     transform: translateX(-50%);
@@ -15,6 +21,15 @@
 }
 .background-modal{
     box-shadow: 0px 0px 50px gray;
+}
+.margin-search{
+    margin-top: 13px;
+}
+.width-bigger{
+    width:30px;
+}
+.background-modal:hover{
+    box-shadow: 0px 0px 50px #ffcc00;
 }
 .input-modal{
     background-color: black;
@@ -219,10 +234,54 @@ ul {
     color: white;
 
 }
+::placeholder {
+    color: white !important;
+    opacity: 1; /* Ensures the color is solid */
+}
+.input-search::placeholder{
+    color: white;
+}
+.background-search{
+    box-shadow: 0px 0px 25px gray;
+}
+.form-control{
+    font-size: 20px !important;
+}
+.form-control::placeholder{
+    color: white;
+}
+.my-search::placeholder{
+    color: white;
+}
+.my-search{
+    box-shadow: 0px 0px 35px gray;
+    border:none;
+}
+.my-search:focus{
+    box-shadow:  0px 0px 34px#ffcc00;
+}
+.my-search:hover{
+    box-shadow:  0px 0px 34px#ffcc00;
+}
+.my-search:active{
+    box-shadow:  0px 0px 34px#ffcc00;
+}
+.bigger-button-mobile{
+    width: 20% !important;
+}
+.bigger-select{
+    font-size: 18px;
+    height:50px !important;
+}
+@media(max-width:1300px){
+    .mobile-margin{
+        margin-left: 20px;
+    }
+}
 @media(max-width:1000px){
     .overlay{
         font-size:110px;
-        top: 95px;
+        top: 125px;
     }
     .pad_bot{
         padding-bottom: 100px;
@@ -238,6 +297,7 @@ ul {
     }
     .overlay-logo{
         width: 90px;
+        top: 140px;
         left: 10%;
     }
     .footer-big{
@@ -280,6 +340,12 @@ ul {
         font-size: 80Px;
         top:60px
     }
+    .mobile-margin{
+        margin-left: 20px;
+    }
+    .bigger-button-mobile{
+        width: 30% !important;
+    }
 }
 .home-how-text{
     font-size: 80px;
@@ -287,6 +353,9 @@ ul {
 @media(max-width: 800px){
     .home-how-text{
         font-size: 60px;
+    }
+    .input-search{
+        margin-left: 30Px;
     }
 }
 @media(max-width: 650px){
@@ -303,7 +372,7 @@ ul {
 }
 @media(max-width: 500px){
     .overlay-logo{
-        top: 120Px;
+        top: 130Px;
         left: 13%;
     }
 }
@@ -312,11 +381,21 @@ ul {
 @media(max-device-width:600px){
     .overlay{
         font-size:70px;
-        top: 80px;
+        top: 120px;
         left: 50%;
+    }
+    .mobile-margin{
+        margin-left: 30px;
     }
     .pad_bot{
         padding-bottom: 100px;
+    }
+    .input-search{
+
+
+    }
+    .bigger-button-mobile{
+        width: 40% !important;
     }
     .logout{
         width: 40px;
@@ -393,7 +472,7 @@ ul {
 
     }
     .overlay-logo{
-        top: 100Px;
+        top: 133Px;
     }
     .home-how-text{
         font-size: 40px;
@@ -424,7 +503,7 @@ ul {
 }
 @media(max-device-width:360px){
     .overlay{
-        top:90px;
+        top:115px;
     }
     .logout{
         width: 32px;
